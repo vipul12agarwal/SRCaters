@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sheelaramancaters.in/</loc>
+    <loc>https://sheelaramancaters.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://sheelaramancaters.in/services/</loc>
+    <loc>https://sheelaramancaters.vercel.app/services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sheelaramancaters.in/gallery/</loc>
+    <loc>https://sheelaramancaters.vercel.app/gallery/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sheelaramancaters.in/packages/</loc>
+    <loc>https://sheelaramancaters.vercel.app/packages/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sheelaramancaters.in/contact/</loc>
+    <loc>https://sheelaramancaters.vercel.app/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

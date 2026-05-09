@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sheelaramancaters.in/sitemap.xml
+Sitemap: https://sheelaramancaters.vercel.app/sitemap.xml
