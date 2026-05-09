@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+/*
+ * Maroon #550000 (reference) + shiny champagne gold type and accents.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --maroon: #550000;
+  --maroon-raised: #691010;
+  --maroon-band: #3d0000;
+
+  --background: var(--maroon);
+  --surface: var(--maroon-raised);
+  --surface-muted: #480808;
+  --panel-invert: var(--maroon-band);
+
+  /* Shiny gold text — higher luminance, slight champagne */
+  --foreground: #f2d78a;
+  --muted: #cfb56a;
+
+  /* Headlines / hero gold */
+  --brand-deep: #fff4d2;
+  --brand-card: #f0c13d;
+
+  --gold: #ebc02e;
+  --gold-bright: #ffe066;
+  --gold-soft: #5c3838;
+
+  --cream: #fff0cc;
+  --ring: #c9952e;
+  --ink: #300606;
+
+  --footer-bg: #2a0000;
+  --footer-text: #f0d58a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm);
+  --font-dev: var(--font-devanagari);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
+
+  .jalebi-loading-root {
+    display: none !important;
+  }
+}
+
+@keyframes jalebi-bubble-rise {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.5);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(0, -110px, 0) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jalebi-bar-scan {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+
+@keyframes jalebi-oil-shimmer {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes jalebi-coil-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+}
+
+:where(a, button):focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm), var(--font-devanagari), system-ui, sans-serif;
+}
+
+.section-eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 220, 120, 0.35);
 }

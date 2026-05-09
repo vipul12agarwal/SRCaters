@@ -1,0 +1,170 @@
+import type { Bilingual } from "@/lib/copy";
+
+export type BusinessMenuSection = {
+  title: Bilingual;
+  items: Bilingual[];
+};
+
+/** Google Business Profile menu (provided by business) — EN + HI for site. */
+export const BUSINESS_MENU_SECTIONS: BusinessMenuSection[] = [
+  {
+    title: { en: "Beverages", hi: "पेय पदार्थ" },
+    items: [
+      { en: "Cold Coffee", hi: "कोल्ड कॉफ़ी" },
+      { en: "Lassi", hi: "लस्सी" },
+      { en: "Thandai", hi: "ठंडाई" },
+      { en: "Nimbu Paani", hi: "निंबू पानी" },
+      { en: "Mixed Fruit Juice", hi: "मिश्रित फलों का रस" },
+      { en: "Watermelon Juice", hi: "तरबूज का रस" },
+      { en: "Orange Juice", hi: "संतरे का रस" },
+      { en: "Pineapple Juice", hi: "अनानास का रस" },
+      { en: "Aam Panna", hi: "आम पना" },
+    ],
+  },
+  {
+    title: { en: "Indian chat", hi: "भारतीय चाट" },
+    items: [
+      { en: "Pani Poori", hi: "पानी पूरी" },
+      { en: "Aloo Tikki", hi: "आलू टिक्की" },
+      { en: "Dahi Bhalla", hi: "दही भल्ला" },
+      { en: "Dhokla", hi: "ढोकला" },
+      { en: "Dahi Papdi", hi: "दही पापड़ी" },
+      { en: "Bhel Puri", hi: "भेल पूरी" },
+      { en: "Besan Chilla", hi: "बेसन चीला" },
+      { en: "Dahi Vada", hi: "दही वड़ा" },
+      { en: "Sprouts Chaat", hi: "अंकुरित चाट" },
+      { en: "Sweet Potato Chaat", hi: "शकरकंद चाट" },
+      { en: "Masala Vadai", hi: "मसाला वड़ा" },
+      { en: "Aaloo Chaat", hi: "आलू चाट" },
+      { en: "Fruit Chaat", hi: "फल चाट" },
+      { en: "Aloo Katori Chaat", hi: "आलू कटोरी चाट" },
+    ],
+  },
+  {
+    title: { en: "Salad", hi: "सलाद" },
+    items: [
+      { en: "Sprouted Moong Salad", hi: "अंकुरित मूंग सलाद" },
+      { en: "Sprouted Chana Salad", hi: "अंकुरित चना सलाद" },
+      { en: "Vegetable Salad", hi: "सब्ज़ी सलाद" },
+      { en: "Beans Salad", hi: "बीन्स सलाद" },
+    ],
+  },
+  {
+    title: { en: "Soups", hi: "सूप" },
+    items: [
+      { en: "Cream Of Tomato Soup", hi: "टमाटर क्रीम सूप" },
+      { en: "Mixed Vegetable Clear Soup", hi: "मिश्रित सब्ज़ी क्लियर सूप" },
+      { en: "Hot N Sour Soup", hi: "हॉट एंड सॉर सूप" },
+    ],
+  },
+  {
+    title: { en: "Snacks", hi: "स्नैक्स" },
+    items: [
+      { en: "Veg Kebab", hi: "वेज कबाब" },
+      { en: "Veg Manchurian", hi: "वेज मंचूरियन" },
+      { en: "Chilly Potato", hi: "चिल्ली पोटैटो" },
+      { en: "Honey Potato", hi: "हनी पोटैटो" },
+      { en: "Paneer Tikka", hi: "पनीर टिक्का" },
+    ],
+  },
+  {
+    title: { en: "Accompaniments", hi: "सहायक व्यंजन" },
+    items: [
+      { en: "Mint Chutney", hi: "पुदीने की चटनी" },
+      { en: "Coriander Chutney", hi: "धनिये की चटनी" },
+      { en: "Papad", hi: "पापड़" },
+      {
+        en: "Pickle (chilli, mango, mixed, and lime)",
+        hi: "अचार (मिर्च, आम, मिश्रित व नींबू)",
+      },
+      { en: "Imli Chutney", hi: "इमली की चटनी" },
+    ],
+  },
+  {
+    title: { en: "Main course", hi: "मुख्य व्यंजन" },
+    items: [
+      { en: "Stuffed Bhindi", hi: "भरवां भिंडी" },
+      { en: "Paneer Methi Malai Matar", hi: "पनीर मेथी मलाई मटर" },
+      { en: "Paneer Makhani", hi: "पनीर मखनी" },
+      { en: "Mixed Veg", hi: "मिक्स वेज" },
+      { en: "Shahi Paneer", hi: "शाही पनीर" },
+      { en: "Kadai Paneer", hi: "कढ़ाई पनीर" },
+      { en: "Jeera Aloo", hi: "जीरा आलू" },
+      { en: "Matar Paneer", hi: "मटर पनीर" },
+      { en: "Gobhi Aloo Matar", hi: "गोबी आलू मटर" },
+      { en: "Palak Paneer", hi: "पालक पनीर" },
+      { en: "Stuffed Baingan", hi: "भरवां बैंगन" },
+      { en: "Tawa Bhindi", hi: "तवा भिंडी" },
+      { en: "Malai Kofta", hi: "मलाई कोफ्ता" },
+      { en: "Paneer Lababdar", hi: "पनीर लबाबदार" },
+      { en: "Sarson Ka Saag", hi: "सरसों का साग" },
+      { en: "Mushroom Matar", hi: "मशरूम मटर" },
+      { en: "Kashmiri Dum Aloo", hi: "कश्मीरी दम आलू" },
+      { en: "Navrattan Curry", hi: "नवरत्न करी" },
+      { en: "Daal Tadka", hi: "दाल तड़का" },
+      { en: "Daal Makhani", hi: "दाल मखनी" },
+      { en: "Panchratna Daal", hi: "पंचरत्न दाल" },
+      { en: "Rajma", hi: "राजमा" },
+      { en: "Chana Daal", hi: "चना दाल" },
+      { en: "Choley", hi: "छोले" },
+      { en: "Urad Daal", hi: "उड़द दाल" },
+      { en: "Chana Masala", hi: "चना मसाला" },
+    ],
+  },
+  {
+    title: { en: "Chapati / flat bread", hi: "चपाती व फ्लैट ब्रेड" },
+    items: [
+      { en: "Puri", hi: "पूरी" },
+      { en: "Naan", hi: "नान" },
+      { en: "Butter Naan", hi: "बटर नान" },
+      { en: "Missi Roti", hi: "मिस्सी रोटी" },
+      { en: "Tawa roti or chapati", hi: "तवा रोटी या चपाती" },
+      { en: "Phulka", hi: "फुल्का" },
+      { en: "Laccha Paratha", hi: "लच्छा पराठा" },
+      { en: "Paratha", hi: "पराठा" },
+      { en: "Kulcha", hi: "कुल्चा" },
+    ],
+  },
+  {
+    title: { en: "Raita", hi: "रायता" },
+    items: [
+      { en: "Pineapple Raita", hi: "अनानास रायता" },
+      { en: "Boondi Raita", hi: "बूंदी रायता" },
+      { en: "Mixed Vegetable Raita", hi: "मिश्रित सब्ज़ी रायता" },
+      { en: "Cucumber Raita", hi: "खीरा रायता" },
+      { en: "Fruit Raita", hi: "फल रायता" },
+    ],
+  },
+  {
+    title: { en: "Desserts", hi: "मिठाई व डेज़र्ट" },
+    items: [
+      { en: "Gulab Jamun", hi: "गुलाब जामुन" },
+      { en: "Jalebi", hi: "जलेबी" },
+      { en: "Kheer", hi: "खीर" },
+      { en: "Dry Fruits Kheer", hi: "मेवों वाली खीर" },
+      { en: "Kesar Kheer", hi: "केसर खीर" },
+      { en: "Rasgulla", hi: "रसगुल्ला" },
+      { en: "Ladoo", hi: "लड्डू" },
+      { en: "Gajar Ka Halwa", hi: "गाजर का हलवा" },
+      { en: "Rasmalai", hi: "रसमलाई" },
+      { en: "Ice cream", hi: "आइस क्रीम" },
+      { en: "Ghevar", hi: "घेवर" },
+      { en: "Anarkali Roll", hi: "अनारकली रोल" },
+      { en: "Malpua", hi: "मालपुआ" },
+      { en: "Kulfi", hi: "कुल्फ़ी" },
+      { en: "Balushahi", hi: "बालूशाही" },
+      { en: "Badam Ka Halwa", hi: "बादाम का हलवा" },
+      { en: "Faluda Kulfi", hi: "फालूदा कुल्फ़ी" },
+    ],
+  },
+  {
+    title: { en: "Paan", hi: "पान" },
+    items: [
+      { en: "Saada Paan", hi: "सादा पान" },
+      { en: "Meetha Paan", hi: "मीठा पान" },
+      { en: "Banarasi Paan", hi: "बनारसी पान" },
+      { en: "Chocolate Paan", hi: "चॉकलेट पान" },
+      { en: "Tambaku Paan", hi: "तंबाकू पान" },
+    ],
+  },
+];
